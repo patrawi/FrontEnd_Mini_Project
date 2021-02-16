@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color : #1D3557;
+  box-sizing: border-box;
+}
+
+p {
+  margin : 0;
+}
+h1 {
+  margin-top : 0;
+  margin-bottom : 0;
+}
+h2 {
+
+  margin : 0;
+  padding: 0;
+}
+div {
+  margin : 0
+}
+textarea {
+  padding : 0;
+  border : 0;
+  resize : vertical;
+}
+section {
+  display : flex;
+  margin : 2.5rem 0;
+  justify-content : space-around;
+}
+.title {
+  color : white;
+  text-align: center;
+  font-weight: 700;
+  text-transform : uppercase;
+  margin-top : 2.5rem;
+}
+
+.underline {
+  background:  #E63946;
+  width: 10rem;
+  height: 0.25rem;
+  margin : 0 auto;
+}
+
+#preview > h1, #preview > h2, #preview > h3 {
+  border-bottom: 2px solid black;
+}
+.editor > textarea,.previewer > p {
+  font-size : 24px;
+  background-color : #F1FAEE;
+  width : 41.875rem;
+  word-wrap : break-word;
+  height : 100%;
+ 
+}
+.modal > textarea {
+  font-size : 24px;
+  background-color : #F1FAEE;
+  width : 100%;
+  word-wrap : break-word;
+  height : 100%;
+ 
+}
+.modal > p {
+  background-color : #F1FAEE;
+  height : 100%;
+  word-wrap : break-word;
+
+}
+
+.subtitle {
+  justify-content : flex-end;
+  padding : 1.25rem 0;
+  border-radius : 20px 20px 0 0;
+  display : flex;
+  background-color : #457B9D;
+}
+img[alt = 'fullscreen'] {
+  margin-left : 250px;
+  margin-right : 2.5rem;
+}
+
+
+.modal {
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding : 100px 0 100% 0; /* Location of the box */
+  left: 0;
+  top: 0;
+  bottom : 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+
+}
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 2px solid darkblue;
+  padding-left: 5px;
+  padding-right: 5px;
+
+}
+@media only screen and (max-width : 1293px) {
+  section {
+    flex-direction: column;
+    align-items : center;
+    
+  }
+  .editor > textarea, .previewer > p {
+    word-wrap : break-word;
+    margin-bottom : 2.5rem;
+  }
+}
+
+@media only screen and (max-width : 700px ) {
+  .subtitle{
+    width : 30rem;
+  }
+
+  .editor > textarea, .previewer > p {
+    width : 30rem;
+    word-wrap : break-word;
+    margin-bottom : 2.5rem;
+  }
+}
+
+
